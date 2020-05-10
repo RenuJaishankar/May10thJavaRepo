@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" ></script>
+</head>
+<body>
+<div>
+<h1>
+    This html works.
+</h1>
+<ul>
+ <li th:each="fruit : ${fruits}">
+   <h1 th:text="{fruit.name}"></h1>
+ </li>
+</ul>
+</div>
+
+</body>
+
+</html>
